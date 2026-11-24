@@ -22,7 +22,6 @@ final class ExternalAPIController extends AbstractController
             $longitude = $data['longitude'];
             $latitude = $data['latitude'];
 
-            // Call the Open-Meteo API
             $apiUrl = sprintf(
                 'https://api.open-meteo.com/v1/forecast?latitude=52.229675&longitude=21.012230&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&timezone=UTC',
                 $latitude,
